@@ -1,0 +1,144 @@
+Terminal Basics Questions
+1. mkdir first
+2. cd first
+3. touch person.txt
+4. mv person.txt another.txt
+5. cp another.txt copy.txt
+6. rm copy.txt
+7. cp -r first second
+8. rm -rf second
+
+
+PART II
+1.man command is used to display user manual of any terminal command in window it is --help
+2. -l list files, -a list both hidden files
+3. curl https://www.google.com > google.html
+4. less google.html
+5. shift left or option right
+6. ctrl + e
+7. move cursor to the begining control + a , delete a word: shift + delete
+8. The shell is the program that actually processes commands, the terminal is a environment used to input and output commands
+9. absolute path starts from the C: DRIVE and then goes to the file or directory location
+10. relative path is starts at the current location
+11. a flag give more functionality to an already existing command
+12. -r removes folder recursively while -f removes folder by force.
+
+
+Permissions and Piping
+
+1. touch restricted.txt
+2. octal: chmod 600 restricted.txt symbolic: chmod a+rwx restricted.txt
+3. mkdir secret_files
+	touch secret_files/first_secret.txt
+	mkdir secret_files/classified
+	touch secret_files/classified/super_secret.txt
+
+4. chmod -R 770 secret_files
+5. ln restricted.txt hard_link
+6. ln -s secret_files/classified classified_link
+
+PART II
+1. sort vagetables.txt
+2. wc -l vegetables.txt
+3. cat vegetables.txt | sort | uniq > vegetables_sorted
+4. cat vegetables.txt | tail -n 3 > last_three.txt
+5. cat vegetables.txt | grep "Broccoli" | wc -l
+	
+INTERMEDIATE TERMINAL
+
+1. export FIRST_NAME=Dara
+2. echo $FIRST_NAME
+3. echo $PATH
+4. It is a set of paths for our environment to find where to run commands
+5. we create variables to reuse them and store data with them
+6. Save them in your .bash_profile
+7. a process is a program running on your machine. Process are run independently on a computer system.
+8. ps -ax
+9. PID a number which uniqely identifies a process
+10. kill
+11. Kill can be used to termnate a process running normally but kill -9 can terminate a process that is frozen or unresponsive 
+12. -i
+13. -B
+14. -C
+15. -A
+16. -w
+17. -n
+
+PART II
+1.cd into your desktop and run find . -name "learn"
+2. cd into your desktop and run find . -name "P.*"
+3. cd into your desktop and run find . -name "*.txt"
+4. cd into your desktop and then into views and run find . -name "*data*"
+5. grep -c "Elie" instructors.txt
+6. grep -w "P.*" instructors.txt
+7. grep -ni "z.*" instructors.txt
+
+
+GIT BASICS EXCERCISE
+1. mkdir learn_git_again
+2. cd learn_git_again
+3. touch third.txt
+4. git init
+5. git add .
+6. git commit -m "adding third.txt"
+7. git log
+8. touch fourth.txt
+9. git add .
+10.git commit -m "adding fourth.txt"
+11. git rm third.txt
+12. git add .
+13. git commit -m removing "third.txt"
+14. git log
+15. git config --global core.pager "cat"
+16. git config --global --list
+
+GITHUB BASICS EXCERCISE
+
+1. mkdir local repo 
+	 cd local repo
+		git init
+		touch file.html
+		git add .
+		git commit -m "first commit"
+
+2. git remote add origin https://github.com/daraadenipekun97/first_repo.git
+	git push -u origin master
+3. 
+4. git branch develop
+
+PART II
+
+DONE
+
+CHECKOUT AND RESET
+
+1. mkdir destruction
+2. cd destruction
+3. git init
+4. touch done.txt
+5. git rm done.txt
+6. touch stage_me.txt
+7. git add .
+8. git rm --cached stage_me.txt
+9. 
+
+
+BRANCHING AND MERGING
+
+1. mkdir branch_time
+2. cd branch_time
+3. git init
+4. touch first.txt
+5. git branch amazing_feature
+6. touch best.txt
+7. git add .
+8. git commit -m "added best.txt"
+9. git checkout master
+10. git merge amazing_feature
+11. git branch -D amazing_feature
+
+
+			
+
+
+
